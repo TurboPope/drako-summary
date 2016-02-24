@@ -1,6 +1,6 @@
 # Einführung
 
-[[introduction]]
+[[summary/introduction]]
 
 # Technische Grundlagen
 
