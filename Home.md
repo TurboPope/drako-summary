@@ -4,24 +4,24 @@
 
 # Technische Grundlagen
 
-[[basics]]
+[[summary/basics]]
 
 # Medienzugriffskontrolle
 
-[[mac]]
+[[summary/mac]]
 
 # Sensornetze
 
-[[sensor-networks]]
+[[summary/sensor-networks]]
 
 # Zellulare Netzwerke
 
-[[cellular-networks]]
+[[summary/cellular-networks]]
 
 # Infrastrukturlose Netzwerke
 
-[[infrastructureless-networks]]
+[[summary/infrastructureless-networks]]
 
 # TCP and Wireless
 
-[[tcp-and-wireless]]
+[[summary/tcp-and-wireless]]
