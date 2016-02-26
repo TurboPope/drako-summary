@@ -107,8 +107,26 @@ Eine reale Antenne ist der **herzsche Dipol**, bei dem sich das Richtdiagramm to
 
 Weitere wichtige Antennentypen sind **gerichtete Antennen** und **Sektorantennen**.
 
+
 # Signale
 
 Ein **Transmitter** versendet Daten, ein **Receiver** empfängt sie. Ein **Transceiver** tut beides.
 
-Daten müssen physikalisch dargestellt werden. Dafür müssen sie in ein quasi analoges Signal umgewandelt werden, das heißt, in Wellenform ausgedrückt werden.
+Daten müssen physikalisch dargestellt werden. Dafür müssen sie vom Transmitter in ein quasi analoges Signal umgewandelt (**moduliert**) werden, das heißt, in Wellenform ausgedrückt werden. Der Reiceiver wandelt (**demoduliert**) sie dann wieder in ihre digitale Form um. Dieser Vorgang geschieht mit Hilfe der **Fourier-Transformation**.
+
+
+# Signalausbreitung
+
+Ein **Dezibel (dB)** ist eine logarithmische Darstellung zweier gleichartiger Größen und ist definiert durch:
+
+$$
+\frac{P_2}{P_1} \quad \left[ dB \right] \quad = 10 \cdot log_{10}\left( \frac{P_2}{P_1} \right)
+$$
+
+Das heißt dass beispielsweise das Verhältnis einer Sendeleistung $P_S = 100 W$ zur Empfangsleistung $P_R = 75 W$ ist
+
+$$
+10 \cdot log_{10}\left( \frac{75}{100} \right) = 8.75 \quad \left[ dB \right]
+$$
+
+Oft gibt es "spezialisierte" Dezibeleinheiten, die sich immer auf eine Bezugsgröße beziehen, in der Vorlesung wird zum Beispiel oft dBm benutzt, es gibt den Leistungspegel an und bezieht sich auf 1 mW.
