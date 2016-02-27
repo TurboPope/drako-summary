@@ -130,3 +130,87 @@ $$
 $$
 
 Oft gibt es "spezialisierte" Dezibeleinheiten, die sich immer auf eine Bezugsgröße beziehen, in der Vorlesung wird zum Beispiel oft dBm benutzt, es gibt den Leistungspegel an und bezieht sich auf 1 mW.
+
+## Friis-Freiraum-Gleichung
+
+Mit der **Friis-Freiraum-Gleichung** lässt sich die empfangene Leistung $P_R$ bei einer gegebenen Sendeleistung $P_T$ Distanz $d$, Wellenlänge $\lambda$ und den Antenna-Gains $G_R$ und $G_T$ *im Freiraum* bestimmen:
+
+$$
+P_R = P_T \cdot G_R \cdot G_T \left( \frac{\lambda}{4 \pi d^2} \right)^2 \quad \left[ \frac{W}{m^2} \right]
+$$
+
+## Two Ray Ground Model
+
+Leider kann ein Signal durch Mehrwegeausbreitung mit sich selbst interferieren. Ein vereinfachtes Modell, das diesen Effekt darstellt, ist das **Two Ray Ground Model**. Sender und Empfänger befinden sich im gleichen Abstand $$ über dem Boden und haben den Abstand $d$ zu einander. Ein Signal empfängt der Empfänger direkt und ein Signal wird vorher am Boden (in der Mitte der Antennen) reflektiert. Die beiden Signale überlagern sich beim Empfänger.
+
+*Todo: Ins Detail gehen*
+
+## Pfadverlust
+
+*Todo: Pfadverlust und Log-Normal-Shadowing auseinanderwurschteln*
+
+$$
+PL(d) = \alpha \cdot 10 \cdot log_{10}(d) + X_\delta
+$$
+
+**Ray-Tracing** ist eine Alternative um Signalausbreitung zu modellieren.
+
+## Mobilität
+
+**Fading** bezeichnet das abnehmen der Empfangsleistung. **Schnelles Fading** sind kurzzeitige Einbrüche, während **langsames Fading** langsame Veränderungen der durchschnittlichen Empfangsleistung bezeichnet.
+
+*Todo: Ricean Fading und Rayleigh Fading genau beschreiben.*
+
+**Ricean Fading** ist ein Fading-Modell für wenn es eine Line of Sight *gibt*, während **Rayleigh-Fading** den Fall *ohne* Line of Sight beschreibt.
+
+Effekte, die das Signal verschlechtern können:
+
+* Shadowing
+* Reflection
+* Refraction
+* Scattering
+* Diffraction
+* Doppler Shift
+
+
+# Multiplexing
+
+Um das Übertragungsmedium mehrfach benutzen zu können, kann man die Signale auf 4 "Dimensionen" verteilen.
+
+* **Frequenz-Multiplexing** sendet Signale auf verschiedenen Frequenzen
+* **Zeit-Multiplexing** weist jedem Signal einen Zeitslot zu
+* **Code-Multiplexing** "charakterisiert" jedes Signal durch einen Code, so dass es auch bei Überlagerung *irgendwie* rekonstruiert werden kann
+* **Raum-Multiplexing** meint simpel die räumliche Verteilung der Signale. Wird oft durch eine Zellstruktur realisiert (*dazu später ein eigenes Thema*)
+
+Diese Techniken können mit einander kombiniert werden.
+
+
+# Modulation
+
+Binäre Daten sollen in analoge Signale umgewandelt werden.
+
+* **Amplitude Shift Keying (ASK)**: Amplituden-Modulation
+* **Frequency Shift Keying (FSK)**: Frequenzmodulation
+* **Phase Shift Keying (PSK)**: Phasenmodulation
+* **Quaternary Phase Shift Keying (QPSK)**: Wie PSK, aber mit mehr als 2 Phasen
+* **Quadraturamplitudenmodulation (QAM)**: Kombiniert QPSK und ASK
+
+
+# Bandspreizverfahren
+
+**Bandspreizverfahren** spreizen ein Signal auf einen Frequenzbereich um gegen schmalbandige Störsignale zu helfen.
+
+Verbreitete Techniken sind:
+
+* **Direct Sequence Spread Spectrum (DSSS)** Das Signal wird mit einer wesentlich längeren, Sender und Empfänger bekannten Chipping-Sequenz xored
+* **Frequency Hopping Spread Spectrum (FHSS)** Das Signal springt in einer Sender und Empfenger bekannten Reihenfolge zwischen Frequenzen hin und her
+
+
+# Codierung
+
+Die **Signal to Noise Ratio (SNR)** gibt das Verhältnis zwischen Empfangsleistung $P_{RX}$ und Rauschleistung $P_0$ beim Empfänger an: $SNR = P_{RX} / N_0$
+
+Mit der **Shannon-Kapazitätsformel** lässt sich die maximale Kanalkapazität $C \ [bps]$ bei gegebener Kanalbandbreite $B \ [Hz]$ und gegebener $SNR$ berechnen:
+
+$$
+C = B \cdot log_2(1 + SNR) \quad \left[ \frac{bit}{s} \right]
