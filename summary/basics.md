@@ -214,3 +214,14 @@ Mit der **Shannon-Kapazitätsformel** lässt sich die maximale Kanalkapazität $
 
 $$
 C = B \cdot log_2(1 + SNR) \quad \left[ \frac{bit}{s} \right]
+$$
+
+Zur **Fehlerdetektion** werden dem Signal redundante Informationen hinzugefügt. Im Falle eines Fehlers kann einer Wiederübertragung angefordert werden. Bei drahtloser Kommunikation sind die Fehlerraten höher und die Verbindungen haben eine hohe Latenz, so dass im Fehlerfall unter Umständen viele Wiederübertragungen stattfinden müssen.
+
+Die **Hamming-Distanz** zwischen zwei gleich langen Bit-Sequenzen gibt die Anzahl der paarweise unterschiedlichen Bits an.
+
+Bei **Block-Codes** werden Datenblöcke zu zugehörigen Codewörtern mit möglichst großer Hamming-Distanz umgewandelt. Ein Fehler wird dadurch erkannt, dass ein Codewort empfangen wird, für das es keinen Datenblock gibt. Ein Fehler kann korrigiert werden, indem das empfangene Codewort durch ein existierendes (mögliches) Codewort ausgetauscht wird, das zu ihm die kleinste Hamming-Distanz hat.
+
+## Zyklische Codes (CRC)
+
+*Todo: Idee hinter CRC erklären*
