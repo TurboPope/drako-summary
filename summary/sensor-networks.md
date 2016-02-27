@@ -44,3 +44,22 @@ $$
 *Todo: Mal die Sachen von den Folien nachrechnen, da stimmt vielleicht was nicht.*
 
 Durch das geschickte Nutzen von verschiedenen Wachheits-Phasen (transmit, receive, idle, sleep) kann man die Lebensdauer theoretisch auf mehrere Jahre erhöhen, aber es gibt auch noch andere Energieverbrauche auf einem Sensorknoten, die Sensorknoten brauchen einiges an Kommunikation für Synchonisation und Batterien verlieren an Stromstärke über Zeit.
+
+## In-Network-Processing
+Um die Menge an zu übertragenden Daten zu verringern können kann im Netzwerk bereits ein gewisses Preprocessing gemacht werden, das irrelevante Daten verwirft.
+
+## Multihop-Kommunikation
+
+Statt direkt zu einem weit entfernten Ziel zu senden können Nachrichten über mehrere dazwischen liegende Knoten geleitet werden, was Energie spart.
+
+
+# MAC-Layer-Fallstudie IEEE 802.15.4
+
+*Wird nicht wirklich gut erklärt und ist wahrscheinlich nicht sehr relevant.*
+
+
+# Energieeffiziente MAC-Layer
+
+## S-MAC und T-MAC
+
+**Sensor-MAC** legt Knoten periodisch schlafen. Diese Schlafzyklen werden mit Nachbarn innerhalb virtueller Cluster synchronisiert.
