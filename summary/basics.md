@@ -222,6 +222,19 @@ Die **Hamming-Distanz** zwischen zwei gleich langen Bit-Sequenzen gibt die Anzah
 
 Bei **Block-Codes** werden Datenblöcke zu zugehörigen Codewörtern mit möglichst großer Hamming-Distanz umgewandelt. Ein Fehler wird dadurch erkannt, dass ein Codewort empfangen wird, für das es keinen Datenblock gibt. Ein Fehler kann korrigiert werden, indem das empfangene Codewort durch ein existierendes (mögliches) Codewort ausgetauscht wird, das zu ihm die kleinste Hamming-Distanz hat.
 
-## Zyklische Codes (CRC)
+## Cyclic redundancy check (CRC)
 
-*Todo: Idee hinter CRC erklären*
+> A cyclic redundancy check (CRC) is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data. Blocks of data entering these systems get a short check value attached, based on the remainder of a polynomial division of their contents. On retrieval, the calculation is repeated and, in the event the check values do not match, corrective action can be taken against data corruption. ([From Wikipedia](https://en.wikipedia.org/wiki/Cyclic_redundancy_check))
+
+
+## Faltungscodes
+
+Jedes Bit (oder jeder Block) aus dem Input wird in ein Codewort umgewandelt, das zusätzlich auch noch eine feste Anzahl vorheriger Inputs mit einbezieht.
+
+![Beispiel für Viterbi-Faltung](img/viterbi.png)
+
+Ein **Trellis-Diagramm** ist eine Art Zustandsdiagramm über Zeit: Jeder Zustand hat eine Reihe und jede Spalte ist ein Zeitpunkt. Je nach Input (durch unterschiedliche Linien dargestellt) wechselt der Zustand in jedem Schritt (oder auch nicht). *Achtung: Die Beschriftung der Kanten entspricht dem Codewort, der Linienstil dem Input.* Der Dekoder folgt dem Pfad der empfangenen Codewörter durch das Trellis-Diagramm und weiß dann anhand der Linien, was der Input war.
+
+Tritt ein Fehler auf, also ein Codewort, das keine Kante hätte, muss der Dekoder dem Pfad folgen, der für die nachfolgenden Codewörter am wenigsten abweicht. Daher kann er erst Dekodieren, nachdem er ein Fenster vollständig empfangen hat.
+
+*Todo: Weniger schwammig machen*
