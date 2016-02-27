@@ -57,3 +57,9 @@ Es muss allerdings ein geschickter **Backoff** nach nicht-erhaltenen CTS eingef�
 
 
 # Code Division Multiple Access (CDMA)
+
+* Alle Stationen operieren auf derselben Frequenz und nutzen so gleichzeitig die gesamte Bandbreite des Übertragungskanals
+* Signal wird auf der Senderseite mit einer für den Sender eindeutigen Pseudozufallszahl verknüpft (XOR)
+* Empfänger kann mittels bekannter Sender-Pseudozufallsfolge und einer Korrelationsfunktion das Originalsignal restaurieren
+
+*Todo: Verstehen warum das funktioniert und warum es praktikabel ist.*
