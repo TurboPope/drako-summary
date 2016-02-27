@@ -49,7 +49,11 @@ Eine Zentraleinheit verwaltet den Zugriff und fragt Endgeräte periodisch ab.
 Zentraleinheit oder Empfänger verwendet Busytones und Bestätigungspakete auf einem dafür reservierten Kanal um Zugriff zu koordinieren. Busytones auf anderen Kanälen sind aber unter Umständen problematisch, wenn sie anders Faden als die gesendeten Daten oder Kommunikationen verhindern, die eigentlich unproblematisch wären.
 
 ## Multiple Access with Collision Avoidance (MACA)
-Benutzt **Request to Send (RTS)**- und **Clear to Send (CTS)**-Pakete mit Senderadresse, Empfängeradresse und Paketgröße zur Kollisionsvermeidung.
+Benutzt **Request to Send (RTS)**- und **Clear to Send (CTS)**-Pakete mit Senderadresse, Empfängeradresse und Paketgröße zur Kollisionsvermeidung. Hiermit sind Hidden-Terminal und Exposed-Terminal gelöst.
+
+Es muss allerdings ein geschickter **Backoff** nach nicht-erhaltenen CTS eingeführt werden, damit sich RTS nicht dauerhaft gegenseitig blockieren.
+
+*Todo: Vielleicht noch bisschen was über Throughput schreiben.*
 
 
 # Code Division Multiple Access (CDMA)
