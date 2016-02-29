@@ -72,3 +72,18 @@ Statt direkt zu einem weit entfernten Ziel zu senden können Nachrichten über m
 ## X-MAC und Wise-MAC
 
 *Todo*
+
+
+# WSN-Programmierung
+
+Operating Systems auf microcontrollers können aus Effizienzgründen nicht die üblichen Funktionen wie memory management und process management anbieten. Da aber meistens eh nur ein einzelnes Programm auf einer WSN-Node läuft, reicht es eine Operating System-artige Runtime zur Verfügung zu stellen.
+
+**TinyOS** benutzt **nesC** als Programmiersprache, ist zwar nicht so einfach zu benutzen und nicht so portabel, braucht dafür aber nicht viel Arbeitsspeicher.
+
+Um **Interrupts** von Sensoren behandeln zu können, werden "minimale Interrupts" (**preemption**) benutzt: Das Programm läuft normal und springt bei einem Interrupt sofort in dessen Handler, speichert aber nur die Daten für spätere Behandlung und macht dann normal weiter. Wenn später Zeit ist, werden die Daten fertig behandlet. Die Interrupts müssen so kurz wie möglich sein, da weitere Interrupts in dieser Zeit nicht behandelt werden können.
+
+**Components** (im Sinne von TinyOS) sind eine Alternative zu Prozessen. Jede Komponente erfüllt eine einzelne Funktionalität. Alle Komponenten teilen sich einen Adressraum. Komplexere Komponenten können mit Hilfe wohldefinierter Schnittstellen aus einfachen Komponenten "zusammengebaut" werden.
+
+**Networking** wird wie vieles Event-based gemacht, da Funktionen die blockieren nicht so cool sind.
+
+**Split-Phased Programming** bezeichnet die Praxis, eine Funktion einer anderen Komponente anzustoßen und dann auf ein Ergebnisevent zu warten.
