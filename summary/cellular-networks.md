@@ -47,7 +47,7 @@ Die an realen zellularen Systemen beteiligten Komponenten sind:
 Folgende Funktionen kommen üblicher Weise zum Einsatz:
 
 * **Mobile-Unit-Initialization**: Base-Stations broadcasten Setup-Signal. MU wählt periodisch BS mit bestem Empfang
-* **Mobile‐Originated‐Call**: MU prüft auf BS‐Forward‐Channel ob ein Channel für einen Anruf frei ist. Sendet dann Verbindungsanfrage via BS an MTSO.
+* **Mobile-Originated-Call**: MU prüft auf BS-Forward-Channel ob ein Channel für einen Anruf frei ist. Sendet dann Verbindungsanfrage via BS an MTSO.
 * **Paging**: MTSO beauftragt BS mit Zielgerät das Zielgerät mit Broadcast über Anruf zu informieren
 * **Call-Accepted**: MU erkennt Paging-Signal, akzeptiert und MTBS kooriniert dann den Anruf
 * **Ongoing-Call**: Der Anruf ist aufgebaut und die teilnehmenden MUs kommunizieren via Base-Stations und MTSO.
