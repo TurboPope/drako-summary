@@ -141,7 +141,7 @@ $$
 
 ## Two Ray Ground Model
 
-Leider kann ein Signal durch Mehrwegeausbreitung mit sich selbst interferieren. Ein vereinfachtes Modell, das diesen Effekt darstellt, ist das **Two Ray Ground Model**. Sender und Empfänger befinden sich im gleichen Abstand $$ über dem Boden und haben den Abstand $d$ zu einander. Ein Signal empfängt der Empfänger direkt und ein Signal wird vorher am Boden (in der Mitte der Antennen) reflektiert. Die beiden Signale überlagern sich beim Empfänger.
+Leider kann ein Signal durch Mehrwegeausbreitung mit sich selbst interferieren. Ein vereinfachtes Modell, das diesen Effekt darstellt, ist das **Two Ray Ground Model**. Sender und Empfänger befinden sich im gleichen Abstand über dem Boden und haben den Abstand $d$ zu einander. Ein Signal empfängt der Empfänger direkt und ein Signal wird vorher am Boden (in der Mitte der Antennen) reflektiert. Die beiden Signale überlagern sich beim Empfänger.
 
 *Todo: Ins Detail gehen*
 
