@@ -63,3 +63,12 @@ Statt direkt zu einem weit entfernten Ziel zu senden können Nachrichten über m
 ## S-MAC und T-MAC
 
 **Sensor-MAC** legt Knoten periodisch schlafen. Diese Schlafzyklen werden mit Nachbarn innerhalb virtueller Cluster synchronisiert.
+
+*Todo*
+
+## B-MAC
+*Todo*
+
+## X-MAC und Wise-MAC
+
+*Todo*
