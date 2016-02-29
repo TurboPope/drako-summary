@@ -97,8 +97,10 @@ Die mittlere Auslastung im Beispiel oben wäre bei $N = 120$ Kanälen $50\%$, be
 
 
 # Beispiel: UMTS
-**UMTS** ist ein 3G-System. Zentral für 3G ist die Nutzung von CDMA. Anescheinend kommen hier auch teilweise **Rake-Receiver** zum Einsatz, die sich Multipath-Ausbreitung zunutze machen, indem sie irgendwie (CDMA scheint das zu ermöglichen) die Signale der Pfade auseinanderhalten können und wieder kombinieren. Dieses Prinzip lässt sich auch auf mehrere Basisstationen übertragen, sodass die Basisstationen alle empfangenen Signale einer MU kombinieren.
+**UMTS** ist ein 3G-System. Zentral für 3G ist die Nutzung von CDMA. Anescheinend kommen hier auch teilweise **Rake-Receiver** zum Einsatz, die sich Multipath-Ausbreitung zunutze machen, indem sie irgendwie (CDMA scheint das zu ermöglichen) die Signale der Pfade auseinanderhalten können und wieder kombinieren. Dieses Prinzip lässt sich auch auf mehrere Basisstationen übertragen, sodass die Basisstationen alle empfangenen Signale einer MU kombinieren. Damit können auch **soft handover** und **softer handover** umgesetzt werden, aber das wird nicht so gut erklärt :-(
 
 *An dieser Stelle werden viele UMTS-Details oberflächlich beschrieben, das alles zu lernen wäre Quatsch.*
 
 **Zellatmung** wird bei UMTS benutzt um die Zellgröße dynamisch an die vorhandende Interferenz (und die damit korrelierte Anzahl der Teilnehmer) anzupassen.
+
+Des Weiteren wird die Übertragungsleistung kontinuierlich angepasst um eine gewünschte Übetragungsqualität beizubehalten.
