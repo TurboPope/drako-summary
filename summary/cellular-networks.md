@@ -89,8 +89,16 @@ $$
 
 Die mittlere Auslastung im Beispiel oben wäre bei $N = 120$ Kanälen $50\%$, bei $N = 60$ Kanälen $100\%$.
 
+*Todo: Verkehrsmodelle und Erlang-B Formel*
+
 
 # Beispiel: GSM
+**GSM** ist der weltweit erfolgreichste Mobilfunkstandart und wurde erstmals 1990 in Europa eingesetzt. Das GSM-Netz besteht aus Mobilstationen (MS, bisher MU), Basisstationen (BS), Mobilvermuttlungseinrichtungen (MSC, bisher MTSO) und Aufenthaltsregistern (LR). Es benutzt TDMA und FDMA. Es gehört zu den 2G-Systemen.
 
 
 # Beispiel: UMTS
+**UMTS** ist ein 3G-System. Zentral für 3G ist die Nutzung von CDMA. Anescheinend kommen hier auch teilweise **Rake-Receiver** zum Einsatz, die sich Multipath-Ausbreitung zunutze machen, indem sie irgendwie (CDMA scheint das zu ermöglichen) die Signale der Pfade auseinanderhalten können und wieder kombinieren. Dieses Prinzip lässt sich auch auf mehrere Basisstationen übertragen, sodass die Basisstationen alle empfangenen Signale einer MU kombinieren.
+
+*An dieser Stelle werden viele UMTS-Details oberflächlich beschrieben, das alles zu lernen wäre Quatsch.*
+
+**Zellatmung** wird bei UMTS benutzt um die Zellgröße dynamisch an die vorhandende Interferenz (und die damit korrelierte Anzahl der Teilnehmer) anzupassen.
