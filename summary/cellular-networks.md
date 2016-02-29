@@ -1,9 +1,9 @@
 # Zellgeometrie
 Idealisierende Annahme: Sender (Basisstationen) sind in Dreiecksstruktur mit immer gleichem Abstand $d$ und immer gleichem Senderadius $r$ angeordnet. Damit ergibt sich ein hexagonaler Bereich um den Sender, in dem ihm jeder Punkt am nächsten ist.
 
-![Rote Punkte: Sender. Tote Linien: Abstände zwischen Sendern. Blaue Hexagone: Sendebereiche](/img/cellular-structure.png)
+![Rote Punkte: Sender. Tote Linien: Abstände zwischen Sendern. Blaue Hexagone: Sendebereiche](img/cellular-structure.png)
 
-![Celldistance und Cellradius](/img/cell-distance-and-radius.png)
+![Celldistance und Cellradius](img/cell-distance-and-radius.png)
 
 Zelldistanz $d$ und Zellradius $r$ stehen in folgendem Verhältnis: $d = \sqrt{3} \cdot r$
 
@@ -17,18 +17,18 @@ $$
 D = C + i \cdot u + j \cdot v \quad i, j \in \mathbb{Z}
 $$
 
-![Zelldistanzvektor. Es ist egal welchen "Pfad" man nimmt.](/img/celldistancevector.png)
+![Zelldistanzvektor. Es ist egal welchen "Pfad" man nimmt.](img/celldistancevector.png)
 
 In der Abbildung ist der Zelldistanzvektor $(i, j) = (4, 3)$.
 
 ## Konstruktion
 Um ein Frequency-Reuse-Pattern zu bauen zeichnet man zunächst eine Zelle in der Mitte ($C$). Dann wählt man eine weitere Zelle möglichst nahe zur ersten, aber außerhalb des Interferenzradius ($C_1$). Mit Hilfe des Zelldistanzvektors zeichnet man nun 5 weitere Zellen, die zu einander und zu $C$ den gleichen (ggf. rotierten) Zelldistanzvektor haben ($C_2 ... C_5$).
 
-![Konstruktion eines Frequency-Reuse-Pattern: Schritt 1](/img/frequency-reuse-pattern-1.png)
+![Konstruktion eines Frequency-Reuse-Pattern: Schritt 1](img/frequency-reuse-pattern-1.png)
 
 Dann weist man den für jede Zelle gleich ihren Nachbarn Frequenzblöcke zu, bis das Muster geschlossen ist.
 
-![Konstruktion eines Frequency-Reuse-Pattern: Schritt 1](/img/frequency-reuse-pattern-2.png)
+![Konstruktion eines Frequency-Reuse-Pattern: Schritt 1](img/frequency-reuse-pattern-2.png)
 
 Frequency-Reuse-Pattern können nicht beliebig groß sein, die Anzahl $n$ ihrer Zellen erfüllt immer
 

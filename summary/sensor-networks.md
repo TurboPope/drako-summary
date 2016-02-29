@@ -19,7 +19,7 @@ WSNs sind **Sensor Nodes** (Sensorknoten) über ein **Sensor Field** verteilt. S
 
 ## Geringe Akkukapazität
 
-![Needs more JPG: Crappige Darstellung von Moore's Law vs. Battery Capacity](/img/moore-vs-battery.jpg)
+![Needs more JPG: Crappige Darstellung von Moore's Law vs. Battery Capacity](img/moore-vs-battery.jpg)
 
 **Ampere-Stunden** $[Ah]$ sagen aus, wie viele Stunden man ein einen Strom von 1 Ampere ziehen kann.
 
