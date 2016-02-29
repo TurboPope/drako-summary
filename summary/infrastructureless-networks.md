@@ -33,7 +33,7 @@ Ein **lokaler Algorithmus** (für eine Topologiekontrolle oder ein Routing-Proto
 ## Dynamic Source Routing (DSR)
 **DSR** ist ein reactives (Source-initiated on-demand) Routing-Protokol. Mit dem Sender beginnend broadcasted jeder Knoten ein eine route discovery Nachricht an seine Nachbarn, die alle bisherigen Stationen der Nachricht beinhaltet, den Knoten selbst eingeschlossen. Sobald die Nachricht den Zielknoten kann er eine Antwortnachricht in umgekehrter Reihenfolge schicken, die die Reihenfolge enthält.
 
-![Beispiel zu DSR](/img/dsr.png)
+![Beispiel zu DSR](img/dsr.png)
 
 
 # Geographische Routingprotokolle
@@ -56,7 +56,7 @@ Das klappt zwar nicht immer, aber ein wireless network graph hat eine implizite,
 
 Darauf aufbauend kann man **Geographic Clustering** machen, wo man ein virtuelles Gitter über den Graphen legt und alle "Kästchen" verbindet, in denen sich benachbarte Knoten befinden.
 
-![Geographic Clustering](/img/geographic-clustering.png)
+![Geographic Clustering](img/geographic-clustering.png)
 
 Ein ähnliches Verfahren ist **K-Hop Clustering** bei dem statt Clustering durch ein virtuelles Gitter *irgend ein* clustering-Algorithmus angewandt wird.
 
