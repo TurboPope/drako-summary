@@ -76,7 +76,7 @@ Lösung: Synchronisationsnachrichten während jedes Wachzyklus verschicken. Dabe
 
 Problem: Knoten $s$ will an $f_3$ senden, hört aber ein CTS von $f_2$. $f_3$ hört das nicht, weil er zu weit weg ist. Also legt sich $f_3$ nach der Contention Period bis zum nächsten Wachzyklus schlafen, $s$ aber nur bis $f_2$ fertig empfangen hat. $f_3$ verschläft dann die Nachricht von $s$.
 
-Lösung: Es wird ein **Future Request To Send (FTRS)** verschuckt, das $f_3$ hört und wieder aufwachen lässt. Nach $CTS$ gibt es eine Verzögerung bis die Daten verschickt werden, damit
+Lösung: Es wird ein **Future Request To Send (FTRS)** verschuckt, das $f_3$ hört und wieder aufwachen lässt. Nach $CTS$ gibt es eine Verzögerung bis die Daten verschickt werden, damit ein etwaiger FTRS nicht mit den Daten kollidiert.
 
 ## B-MAC
 
