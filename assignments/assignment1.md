@@ -112,3 +112,42 @@ G = 0.6 \left( \frac{\pi \cdot 4 GHz \cdot 0.9 m}{3 * 10^8 \frac{m}{s}} \right)^
 $$
 
 Also $10 \cdot log_{10}(852.7) \approx 29.31 dB$
+
+
+## Aufgabe 5
+
+Nach Friis ist $A = \left( \frac{\lambda}{4 \pi d^2} \right)^2$.
+
+Aus der gegebenen Tabelle geht hervor dass $-6 dB = 10^\frac{-6}{10} \approx 0.25 = \left( \frac{\lambda}{4 \pi km^2} \right)^2$.
+
+Daraus kann man jetzt die Wellenlänge $\lambda$ herausfrimeln:
+
+$$
+0.25 = \left( \frac{\lambda}{4 \pi km^2} \right)^2
+$$
+$$
+\Leftrightarrow 0.25 = \frac{\lambda^2}{16 \pi^2 km^4}
+$$
+$$
+\Leftrightarrow 1 = \frac{4 \lambda^2}{16 \pi^2 km^4}
+$$
+$$
+\Leftrightarrow 1 = \frac{\lambda^2}{4 \pi^2 km^4}
+$$
+$$
+\Leftrightarrow \frac{1}{\lambda^2} = \frac{1}{4 \pi^2 km^4}
+$$
+$$
+\Leftrightarrow \lambda^2 = 4 \pi^2 km^4
+$$
+$$
+\Leftrightarrow \lambda = 2 \pi km^2
+$$
+
+**distance (km)** | **wireless (dB)** | **wired(dB)**
+----------------- | ----------------- | ---------
+**1**             | **-6**            | **-3**
+**2**             | Todo              | -6
+**4**             | Todo              | -12
+**8**             | Todo              | -24
+**16**            | Todo              | -48
