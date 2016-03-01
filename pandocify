@@ -21,6 +21,7 @@ sub pandocify($path, $level = 0)
     while (<$fh>)
     {
         s/^(#+)/$1 . ('#' x $level)/ge;
+        s/\(\/img/(img/g;
         if (/\[\[(?:.*\|)?(.+?)\]\]/ && !$done{"$1.md"})
         {
             print "\n";

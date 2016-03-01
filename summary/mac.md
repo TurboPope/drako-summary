@@ -1,8 +1,8 @@
 Medienzugriffsverfahren aus der drahtgebundenen Kommunikation können nicht ohne weiteres übernommen werden. CSMA/CD kann aufgrund des **Hidden Terminal Problem** manche Kollisionen nicht feststellen und verhindert aufgrund des **Exposed Terminal Problem** manchmal unnötig Übertragungen.
 
-![Hidden Terminal Problem Beispiel](img/hidden-terminal.png)
+![Hidden Terminal Problem Beispiel](/img/hidden-terminal.png)
 
-![Hidden Terminal Problem Beispiel](img/exposed-terminal.png)
+![Hidden Terminal Problem Beispiel](/img/exposed-terminal.png)
 
 Die bereits vorgestellten Multiplexing-Verfahren können hier eingesetzt werden, um den Medienzugriff zu steuern.
 

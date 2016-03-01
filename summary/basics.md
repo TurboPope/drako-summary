@@ -101,7 +101,7 @@ Ein **Radiation Pattern** (Richtdiagramm) ist eine Darstellung der Stärke der A
 
 Eine reale Antenne ist der **herzsche Dipol**, bei dem sich das Richtdiagramm torusförmig ist.
 
-![Radiation Pattern eines herzschen Dipols](img/radiation-pattern.png)
+![Radiation Pattern eines herzschen Dipols](/img/radiation-pattern.png)
 
 Weitere wichtige Antennentypen sind **gerichtete Antennen** und **Sektorantennen**.
 
@@ -149,7 +149,7 @@ $$
 
 ## Two Ray Ground Model
 
-![Two Ray Model aus Wikipedia](img/tworay.png)
+![Two Ray Model aus Wikipedia](/img/tworay.png)
 
 Leider kann ein Signal durch Mehrwegeausbreitung mit sich selbst interferieren. Ein vereinfachtes Modell, das diesen Effekt darstellt, ist das **Two Ray Ground Model** für Pfadverlust. Sender und Empfänger befinden sich im gleichen Abstand über dem Boden und haben den Abstand $d$ zu einander. Ein Signal empfängt der Empfänger direkt und ein Signal wird vorher am Boden (in der Mitte der Antennen) reflektiert. Die beiden Signale überlagern sich beim Empfänger.
 
@@ -172,7 +172,7 @@ Effekte, die das Signal verschlechtern können:
 
 # Multipath-Fading
 
-![Raleigh- und Ricean-Verteilung](img/fading.jpg)
+![Raleigh- und Ricean-Verteilung](/img/fading.jpg)
 
 **Ricean Fading** ist ein Fading-Modell für wenn es eine Line of Sight *gibt*. Das Signal, das per LOS übertragen wird, ist signifikant stärker als die anderen Pfade. Es wird **dominanter Pfad** genannt.
 
@@ -238,7 +238,7 @@ Bei **Block-Codes** werden Datenblöcke zu zugehörigen Codewörtern mit möglic
 
 Jedes Bit (oder jeder Block) aus dem Input wird in ein Codewort umgewandelt, das zusätzlich auch noch eine feste Anzahl vorheriger Inputs mit einbezieht.
 
-![Beispiel für Viterbi-Faltung](img/viterbi.png)
+![Beispiel für Viterbi-Faltung](/img/viterbi.png)
 
 Ein **Trellis-Diagramm** ist eine Art Zustandsdiagramm über Zeit: Jeder Zustand hat eine Reihe und jede Spalte ist ein Zeitpunkt. Je nach Input (durch unterschiedliche Linien dargestellt) wechselt der Zustand in jedem Schritt (oder auch nicht). *Achtung: Die Beschriftung der Kanten entspricht dem Codewort, der Linienstil dem Input.* Der Dekoder folgt dem Pfad der empfangenen Codewörter durch das Trellis-Diagramm und weiß dann anhand der Linien, was der Input war.
 
