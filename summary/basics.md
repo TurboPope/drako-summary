@@ -85,9 +85,13 @@ $$
 # Frequenzen und Regulierungen
 
 Die bekanntesten Frequenzbereiche sind:
+
 * **LF - Low Frequency** Langwellen-Radio, $30 kHz$ bis $300 kHz$
+
 * **MF - Medium Frequency** Mittelwellen-Radio, $300 kHz$ bis $3 MHz$
+
 * **HF - High Frequency** Kurzwellen-Radio, $3 MHz$ bis $30 MHz$
+
 * **VHF - Very High Frequency** Ultrakuzwellen-Radio (UKW), $30 MHz$ bis $300 MHz$
 
 Die **ITU-R** ist eine internationale Organisation die Radiofrequenzen vergibt.
