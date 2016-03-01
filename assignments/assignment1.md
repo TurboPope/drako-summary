@@ -144,10 +144,18 @@ $$
 \Leftrightarrow \lambda = 2 \pi km^2
 $$
 
+Damit kann man jetzt die Formel für die Tabelle aufstellen:
+
+$$
+A(d) = 10 \cdot log_{10}\left(\left( \frac{2 \pi km^2}{4 \pi d^2} \right)^2 \right)
+$$
+
 **distance (km)** | **wireless (dB)** | **wired(dB)**
 ----------------- | ----------------- | ---------
 **1**             | **-6**            | **-3**
-**2**             | Todo              | -6
-**4**             | Todo              | -12
-**8**             | Todo              | -24
-**16**            | Todo              | -48
+**2**             | -18               | -6
+**4**             | -30               | -12
+**8**             | -42               | -24
+**16**            | -54               | -48
+
+Und laut Übungslösung ist das falsch, ich weiß aber nicht warum. Die Rechnung ist korrekt.
