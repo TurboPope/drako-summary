@@ -28,7 +28,7 @@ Ein **lokaler Algorithmus** (für eine Topologiekontrolle oder ein Routing-Proto
 ## Ad-Hoc On-Demand Distance Vector Routing (AODV)
 **AODV** ist ein reactives (Source-initiated on-demand) Routing-Protokol.
 
-*Wird nur mit unverständlichen Bildern erklärt.*
+Dausi glaubt dieses ad (AODV) sendet wenn eine route nicht bekannt ist einfach broadcasts, und die wege der nachrichten werden gemerkt, und wenn die erste nachricht bei dem knoten ankommt wird die über die empfangene route wieder zurückgesendet.
 
 ## Dynamic Source Routing (DSR)
 **DSR** ist ein reactives (Source-initiated on-demand) Routing-Protokol. Mit dem Sender beginnend broadcasted jeder Knoten ein eine route discovery Nachricht an seine Nachbarn, die alle bisherigen Stationen der Nachricht beinhaltet, den Knoten selbst eingeschlossen. Sobald die Nachricht den Zielknoten kann er eine Antwortnachricht in umgekehrter Reihenfolge schicken, die die Reihenfolge enthält.
