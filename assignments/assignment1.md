@@ -93,3 +93,22 @@ $$
 $$
 f = \frac{3 * 10^8 \frac{m}{s}}{4x} \approx \frac{7.495 \cdot 10^7 \frac{m}{s}}{x}
 $$
+
+
+## Aufgabe 4
+
+**a)** Einsetzen:
+
+$$
+G = e_a \left( \frac{\pi f d}{c} \right)^2 = 0.6 \left( \frac{\pi \cdot 4 GHz \cdot 0.6 m}{3 * 10^8 \frac{m}{s}} \right)^2 = 379
+$$
+
+In mysteriösen Dezibel: $10 \cdot log_{10}(379) \approx 25.8 dB$
+
+**b)** Noch ne Runde:
+
+$$
+G = 0.6 \left( \frac{\pi \cdot 4 GHz \cdot 0.9 m}{3 * 10^8 \frac{m}{s}} \right)^2 = 852.7
+$$
+
+Also $10 \cdot log_{10}(852.7) \approx 29.31 dB$
