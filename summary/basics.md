@@ -161,10 +161,6 @@ Es gibt jetzt irgendwelche komplizierten Formeln um irgendwelche Dinge auszurech
 
 **Fading** bezeichnet das abnehmen der Empfangsleistung. **Schnelles Fading** sind kurzzeitige Einbrüche, während **langsames Fading** langsame Veränderungen der durchschnittlichen Empfangsleistung bezeichnet.
 
-*Todo: Ricean Fading und Rayleigh Fading genau beschreiben.*
-
-**Ricean Fading** ist ein Fading-Modell für wenn es eine Line of Sight *gibt*, während **Rayleigh-Fading** den Fall *ohne* Line of Sight beschreibt.
-
 Effekte, die das Signal verschlechtern können:
 
 * Shadowing
@@ -174,6 +170,15 @@ Effekte, die das Signal verschlechtern können:
 * Diffraction
 * Doppler Shift
 
+# Multipath-Fading
+
+![Raleigh- und Ricean-Verteilung](img/fading.jpg)
+
+**Ricean Fading** ist ein Fading-Modell für wenn es eine Line of Sight *gibt*. Das Signal, das per LOS übertragen wird, ist signifikant stärker als die anderen Pfade. Es wird **dominanter Pfad** genannt.
+
+**Rayleigh-Fading** ist ein Spezialfall des Ricean Fading, das den Fall *ohne* Line of Sight beschreibt. Hier gibt es keinen dominanten Pfad.
+
+Auch hier gibt es wieder übel komplizierte Formeln mit $e$ und $\sigma$ und Bessel-Funktionen nullter Ordnung der ersten Art, aber ich glaube auch wieder, dass das nicht relevant ist.
 
 # Multiplexing
 
