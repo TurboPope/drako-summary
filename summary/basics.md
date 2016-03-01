@@ -242,6 +242,12 @@ Jedes Bit (oder jeder Block) aus dem Input wird in ein Codewort umgewandelt, das
 
 Ein **Trellis-Diagramm** ist eine Art Zustandsdiagramm über Zeit: Jeder Zustand hat eine Reihe und jede Spalte ist ein Zeitpunkt. Je nach Input (durch unterschiedliche Linien dargestellt) wechselt der Zustand in jedem Schritt (oder auch nicht). *Achtung: Die Beschriftung der Kanten entspricht dem Codewort, der Linienstil dem Input.* Der Dekoder folgt dem Pfad der empfangenen Codewörter durch das Trellis-Diagramm und weiß dann anhand der Linien, was der Input war.
 
-Tritt ein Fehler auf, also ein Codewort, das keine Kante hätte, muss der Dekoder dem Pfad folgen, der für die nachfolgenden Codewörter am wenigsten abweicht. Daher kann er erst Dekodieren, nachdem er ein Fenster vollständig empfangen hat.
+Tritt ein Fehler auf, also ein Codewort, das keine Kante hätte, muss der Dekoder dem Pfad folgen, der für die nachfolgenden Codewörter am wenigsten abweicht. Daher kann er erst Dekodieren, nachdem er ein Fenster vollständig empfangen hat. Das geht zum Beispiel per Hamming-Distanz:
 
-*Todo: Weniger schwammig machen*
+![Beispiel für Korrektur per Hamming-Code](/img/viterbi-decode.png)
+
+1. Startzustand markieren
+
+2. Alle Pfade finden, für die *Gewicht des Vorgängerzustands + Hamming-Distanz zwischen der letzten Kante und der empfangenen Kantenbeschriftung* minimal ist.
+
+3. Falls die Pfade eine erste gemeinsame Kante haben, so ist das der tatsächliche Wert und der Fehler ist korrigiert. Andernfalls ist der Fehler nicht korrigierbar.
