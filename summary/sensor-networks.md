@@ -79,12 +79,24 @@ Problem: Knoten $s$ will an $f_3$ senden, hört aber ein CTS von $f_2$. $f_3$ h�
 Lösung: Es wird ein **Future Request To Send (FTRS)** verschuckt, das $f_3$ hört und wieder aufwachen lässt. Nach $CTS$ gibt es eine Verzögerung bis die Daten verschickt werden, damit
 
 ## B-MAC
-*Todo*
 
-## X-MAC und Wise-MAC
+![B-MAC inklusive Problemen](/img/bmac.png)
 
-*Todo*
+**Berkeley Media Access Control** synchronisiert Knoten nicht. Stattdessen schicken Knoten, die etwas zu senden haben, eine Präambel, die lang genug ist, dass der Empfängerknoten aufwachen und bemerken kann, dass die Nachricht für ihn ist. Nach der Präambel werden die Daten verschickt, kein CTS findet statt.
 
+Probleme siehe Bild.
+
+## X-MAC
+
+Ich glaube das X steht für eXtended preamble, aber das wird [aus dem Paper nicht klar](http://web.stanford.edu/class/cs244e/papers/xmac.pdf). Es ist eine Erweiterung von B-MAC.
+
+Statt die ganze Zeit zu präamblen, werden periodisch Präambel-„Strobes” verschickt. Wenn der Empfängerknoten einen solchen hört, schickt er ein ACK und das Datensenden beginnt. Andere Knoten legen sich durch die Strobes wieder schlafen.
+
+Problem: im Prinzip wäre ja nur ein Strobe notwendig, kurz bevor der Empfänger aufwacht.
+
+## Wise-MAC
+
+Beim **Wireless Sensor MAC** sendet der Empfänger nach dem Empfang von Daten noch wie lange er sich schlafen legen wird. Falls der gleiche Sender dann nochmal Daten für ihn hat, weiß er genau, wann er den Strobe schicken muss, damit der Empfänger ihn hört. Es wird also ganz minimal synchronisiert.
 
 # WSN-Programmierung
 
