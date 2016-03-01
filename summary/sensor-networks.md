@@ -62,7 +62,7 @@ Statt direkt zu einem weit entfernten Ziel zu senden können Nachrichten über m
 
 ## S-MAC
 
-**Sensor Multiple Access Control** legt Knoten periodisch schlafen. Diese Schlafzyklen müssen über das ganze Netzwerk synchron sein, weil sonst die Knoten Nachrichten verschlafen.
+**Sensor Media Access Control** legt Knoten periodisch schlafen. Diese Schlafzyklen müssen über das ganze Netzwerk synchron sein, weil sonst die Knoten Nachrichten verschlafen.
 
 Problem: [Clock-Drift macht die Hitreg kaputt](https://www.reddit.com/r/GlobalOffensive/comments/3zsmxd/clock_drift_issue_making_client_and_server_out_of/) und die Schlafzyklen desynchronisieren.
 
@@ -72,7 +72,7 @@ Lösung: Synchronisationsnachrichten während jedes Wachzyklus verschicken. Dabe
 
 ![T-MAC-Problem und -Lösung](/img/tmac.png)
 
-**Timeout Multiple Access Control** ist eine Erweiterung von S-MAC. Statt dass die Knoten während des ganzen Wachzyklus auf Nachrichten warten, legen sie sich nach einem gehörten Clear To Send wieder für die erwartete Übertragungszeit schlafen, da sie eh nichts tun können während die andere Übertragung läuft. Falls gar kein Request To Send kommt, legen sie sich ebenfalls schlafen, und zwar bis zum nächsten Wachzyklus.
+**Timeout Media Access Control** ist eine Erweiterung von S-MAC. Statt dass die Knoten während des ganzen Wachzyklus auf Nachrichten warten, legen sie sich nach einem gehörten Clear To Send wieder für die erwartete Übertragungszeit schlafen, da sie eh nichts tun können während die andere Übertragung läuft. Falls gar kein Request To Send kommt, legen sie sich ebenfalls schlafen, und zwar bis zum nächsten Wachzyklus.
 
 Problem: Knoten $s$ will an $f_3$ senden, hört aber ein CTS von $f_2$. $f_3$ hört das nicht, weil er zu weit weg ist. Also legt sich $f_3$ nach der Contention Period bis zum nächsten Wachzyklus schlafen, $s$ aber nur bis $f_2$ fertig empfangen hat. $f_3$ verschläft dann die Nachricht von $s$.
 
