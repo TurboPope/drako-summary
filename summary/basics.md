@@ -145,6 +145,12 @@ $$
 PL(d) = \alpha \cdot 10 \cdot log_{10}(d) + X_\delta
 $$
 
+Log-Normal-Shading:
+
+$$
+PL = PL(d_0) + 10 n \cdot log_{10}\left( \frac{d}{d_0} \right) + X_\delta
+$$
+
 **Ray-Tracing** ist eine Alternative um Signalausbreitung zu modellieren.
 
 ## Two Ray Ground Model
