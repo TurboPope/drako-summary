@@ -13,8 +13,6 @@ $$
 * $f$ Frequenz der Welle
 * $t$ Zeit
 
-*TODO: Humane Beschreibung der Formel*
-
 Die **Wellenlänge** $\lambda$ einer Welle lässt sich aus der Frequenz $f$ und der Lichtgeschwindigkeit (Konstante) $c$ berechnen:
 
 $$
