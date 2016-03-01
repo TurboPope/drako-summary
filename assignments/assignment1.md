@@ -191,3 +191,8 @@ $$
 Das mach ich jetzt nicht weil ich heut noch was schaffen will.
 
 **c)** Todo vielleicht
+
+
+# Aufgabe 8
+
+Todo
