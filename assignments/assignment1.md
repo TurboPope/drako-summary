@@ -159,3 +159,35 @@ $$
 **16**            | -54               | -48
 
 Und laut Übungslösung ist das falsch, ich weiß aber nicht warum. Die Rechnung ist korrekt.
+
+
+# Aufgabe 6
+
+Todo vielleicht
+
+
+# Aufgabe 7
+
+**a)** Aus Aufgabe 3 c) kann man die Formel verwenden und nach x auflösen:
+
+$$
+f = \frac{3 * 10^8 \frac{m}{s}}{4x} \Leftrightarrow x = \frac{3 * 10^8 \frac{m}{s}}{4f}
+$$
+
+Und dann $f$ einsetzen:
+
+$$
+x = \frac{3 * 10^8 \frac{m}{s}}{4 \cdot 900 MHz} = 0.0833 m = 8.33 cm
+$$
+
+**b)** Aus a) folgt $\lambda = 4x = 4 \cdot 8.33 cm = 33.3 cm$.
+
+Man kann dann $G$ und $\lambda$ in die Formel aus Aufgabe 4 einsetzen und nach $A$ umformen:
+
+$$
+G = \frac{4 \pi A}{\lambda^2}
+$$
+
+Das mach ich jetzt nicht weil ich heut noch was schaffen will.
+
+**c)** Todo vielleicht
