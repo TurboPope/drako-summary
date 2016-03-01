@@ -137,12 +137,6 @@ $$
 P_R = P_T \cdot G_R \cdot G_T \left( \frac{\lambda}{4 \pi d^2} \right)^2 \quad \left[ \frac{W}{m^2} \right]
 $$
 
-## Two Ray Ground Model
-
-Leider kann ein Signal durch Mehrwegeausbreitung mit sich selbst interferieren. Ein vereinfachtes Modell, das diesen Effekt darstellt, ist das **Two Ray Ground Model**. Sender und Empfänger befinden sich im gleichen Abstand über dem Boden und haben den Abstand $d$ zu einander. Ein Signal empfängt der Empfänger direkt und ein Signal wird vorher am Boden (in der Mitte der Antennen) reflektiert. Die beiden Signale überlagern sich beim Empfänger.
-
-*Todo: Ins Detail gehen*
-
 ## Pfadverlust
 
 *Todo: Pfadverlust und Log-Normal-Shadowing auseinanderwurschteln*
@@ -152,6 +146,16 @@ PL(d) = \alpha \cdot 10 \cdot log_{10}(d) + X_\delta
 $$
 
 **Ray-Tracing** ist eine Alternative um Signalausbreitung zu modellieren.
+
+## Two Ray Ground Model
+
+![Two Ray Model aus Wikipedia](img/tworay.png)
+
+Leider kann ein Signal durch Mehrwegeausbreitung mit sich selbst interferieren. Ein vereinfachtes Modell, das diesen Effekt darstellt, ist das **Two Ray Ground Model** für Pfadverlust. Sender und Empfänger befinden sich im gleichen Abstand über dem Boden und haben den Abstand $d$ zu einander. Ein Signal empfängt der Empfänger direkt und ein Signal wird vorher am Boden (in der Mitte der Antennen) reflektiert. Die beiden Signale überlagern sich beim Empfänger.
+
+Trotz seiner Einfachheit gibt das Modell ziemlich gute Ergebnisse in makrozellulären Systemen wenn die Antennen hoch angebracht sind und Sichtlinie zueinander haben.
+
+Es gibt jetzt irgendwelche komplizierten Formeln um irgendwelche Dinge auszurechnen, aber ich glaube nicht, dass die in der Klausur gebraucht werden.
 
 ## Mobilität
 
