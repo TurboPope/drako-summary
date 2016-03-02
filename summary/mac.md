@@ -2,7 +2,7 @@ Medienzugriffsverfahren aus der drahtgebundenen Kommunikation können nicht ohne
 
 ![Hidden Terminal Problem Beispiel](/img/hidden-terminal.png)
 
-![Hidden Terminal Problem Beispiel](/img/exposed-terminal.png)
+![Exposed Terminal Problem Beispiel](/img/exposed-terminal.png)
 
 Die bereits vorgestellten Multiplexing-Verfahren können hier eingesetzt werden, um den Medienzugriff zu steuern.
 
