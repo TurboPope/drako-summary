@@ -131,10 +131,16 @@ Oft gibt es "spezialisierte" Dezibeleinheiten, die sich immer auf eine Bezugsgr�
 
 ## Friis-Freiraum-Gleichung
 
-Mit der **Friis-Freiraum-Gleichung** lässt sich die empfangene Leistung $P_R$ bei einer gegebenen Sendeleistung $P_T$ Distanz $d$, Wellenlänge $\lambda$ und den Antenna-Gains $G_R$ und $G_T$ *im Freiraum* bestimmen:
+Mit der **Friis-Freiraum-Gleichung** lässt sich die empfangene Leistung $P_R$ bei einer gegebenen Sendeleistung $P_T \left[ W/m² \right]$, Distanz $d \left[ m \right]$, Wellenlänge $\lambda \left[ m \right]$ und den Antenna-Gains $G_R$ und $G_T$ (als Anteile) *im Freiraum* bestimmen:
 
 $$
 P_R = P_T \cdot G_R \cdot G_T \left( \frac{\lambda}{4 \pi d^2} \right)^2 \quad \left[ \frac{W}{m^2} \right]
+$$
+
+Sind die Antenna Gains nicht in normalen Anteilen gegeben, sondern in Dezibel, lautet die Formel:
+
+$$
+P_R = P_T + G_R + G_T + 20log_{10}\left( \frac{\lambda}{4 \pi d^2} \right) \quad \left[ \frac{W}{m^2} \right]
 $$
 
 ## Pfadverlust
