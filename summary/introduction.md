@@ -42,6 +42,6 @@ Das Ganze wurde dann schnell kommerzialisiert und 1958 wurde in Deutschland das 
 5. Bitübertragungsschicht
   * Verschlüsselung
   * Modulation
-  * Interferenzen (*Ja, die werden hier erzeugt**)
+  * Interferenzen (*Ja, die werden hier erzeugt*)
   * Dämpfungen
   * Frequenzen (*Auch die werden hier hergestellt*)
