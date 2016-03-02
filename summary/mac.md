@@ -59,7 +59,11 @@ Es muss allerdings ein geschickter **Backoff** nach nicht-erhaltenen CTS eingef�
 # Code Division Multiple Access (CDMA)
 
 * Alle Stationen operieren auf derselben Frequenz und nutzen so gleichzeitig die gesamte Bandbreite des Übertragungskanals
-* Signal wird auf der Senderseite mit einer für den Sender eindeutigen Pseudozufallszahl verknüpft (XOR)
+* Signal wird auf der Senderseite mit einer für den Sender eindeutigen Pseudozufallszahl (**Chipping Sequence**) verknüpft (XOR)
 * Empfänger kann mittels bekannter Sender-Pseudozufallsfolge und einer Korrelationsfunktion das Originalsignal restaurieren
 
-*Todo: Verstehen warum das funktioniert und warum es praktikabel ist.*
+Die Chipping-Sequenz wird in Amplituden verwandelt ($1 \rightarrow +1$, $0 \rightarrow -1$). Diese werden mit dem zu sendenden Bit multipliziert. Dann werden die Signale aller Sender zusammenaddiert.
+
+Beim Empfänger wird das empfangene Signal wieder mit der originellen Chipping-Sequenz multipliziert und dann die Quersumme gebildet. Wenn das Ergebnis > 0 ist, dann war das gesendete Bit eine 1, sonst war es eine 0.
+
+![Visualisierung von CDMA](/img/cdma.png)
